@@ -1,12 +1,12 @@
 package br.com.itau.password.validator;
 
-import java.util.Set;
+import java.util.List;
 
 public class ValidatorEngine {
 
-	private Set<Validator> validators;
+	private List<Validator> validators;
 	
-	public ValidatorEngine(Set<Validator> validators) {
+	public ValidatorEngine(List<Validator> validators) {
 		this.validators = validators;
 	}
 	
