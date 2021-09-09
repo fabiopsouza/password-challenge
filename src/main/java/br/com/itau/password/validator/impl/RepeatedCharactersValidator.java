@@ -19,7 +19,7 @@ public class RepeatedCharactersValidator implements Validator {
 				.mapToObj(character -> (char) character).collect(toSet());
 		
 		if(text.length() != chars.size()) {
-			throw new IllegalArgumentException("Argument has repeated character");
+			throw new IllegalArgumentException("Repeated character is invalid");
 		}
 	}
 }

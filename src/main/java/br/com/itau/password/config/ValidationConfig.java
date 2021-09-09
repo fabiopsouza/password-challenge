@@ -13,6 +13,7 @@ import br.com.itau.password.validator.impl.LowerCaseValidator;
 import br.com.itau.password.validator.impl.RepeatedCharactersValidator;
 import br.com.itau.password.validator.impl.SpecialCharacterValidator;
 import br.com.itau.password.validator.impl.UpperCaseValidator;
+import br.com.itau.password.validator.impl.WhiteSpaceValidator;
 
 @Configuration
 public class ValidationConfig {
@@ -26,7 +27,8 @@ public class ValidationConfig {
 				new LowerCaseValidator(),
 				new UpperCaseValidator(),
 				new SpecialCharacterValidator(),
-				new RepeatedCharactersValidator()
+				new RepeatedCharactersValidator(),
+				new WhiteSpaceValidator()
 			));
 	}
 }

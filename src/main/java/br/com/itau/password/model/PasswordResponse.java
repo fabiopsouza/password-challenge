@@ -14,7 +14,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class PasswordResponse {
 
-	@JsonProperty(index = 0)
+	@JsonProperty(value = "isValid", index = 0)
 	private boolean isValid = true;
 	
 	@JsonProperty(index = 1)
