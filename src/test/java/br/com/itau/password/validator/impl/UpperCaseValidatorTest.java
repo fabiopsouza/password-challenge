@@ -26,4 +26,9 @@ public class UpperCaseValidatorTest {
 	public void shouldNoException_whenParameter_hasUpperCase() {
 		validator.validate("teSte");
 	}
+	
+	@Test
+	public void shouldNoException_whenParameter_isNull() {
+		validator.validate(null);
+	}
 }

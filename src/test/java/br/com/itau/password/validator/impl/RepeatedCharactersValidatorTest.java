@@ -26,4 +26,9 @@ public class RepeatedCharactersValidatorTest {
 	public void shouldNoException_whenParameter_doesNotHasRepeatedCharacter() {
 		validator.validate("abcde");
 	}
+	
+	@Test
+	public void shouldNoException_whenParameter_isNull() {
+		validator.validate(null);
+	}
 }

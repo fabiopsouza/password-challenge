@@ -10,7 +10,7 @@ public class BlankValidator implements Validator {
 	public void validate(String text) {
 		
 		if(isBlank(text)) {
-			throw new IllegalArgumentException("Argument is null, empty or white space");
+			throw new IllegalArgumentException("Password argument is required");
 		}
 	}
 }

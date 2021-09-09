@@ -28,7 +28,7 @@ public class BlankValidatorTest {
 	}
 	
 	@Test
-	public void shouldNoException_whenParameter_isOk() {
+	public void shouldNoException_whenParameter_isFilled() {
 		validator.validate("test");
 	}
 }

@@ -6,7 +6,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 
-import br.com.itau.password.validator.ValidatorEngine;
+import br.com.itau.password.model.PasswordResponse;
+import br.com.itau.password.validator.impl.DefaultValidatorEngine;
 import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
@@ -14,20 +15,20 @@ import lombok.extern.slf4j.Slf4j;
 public class PasswordController {
 
 	@Autowired
-	private ValidatorEngine validator;
+	private DefaultValidatorEngine validator;
 	
 	@PostMapping("/password/validate")
-	public ResponseEntity<Boolean> validatePassword(@RequestBody (required=false) String password) {
+	public ResponseEntity<PasswordResponse> validatePassword(@RequestBody (required=false) String password) {
 		
 		try {
-			
-			validator.validateAll(password);
-			return ResponseEntity.ok(true);
+			PasswordResponse response = validator.validateAll(password);
+			return ResponseEntity.ok(response);
 		}
-		catch (IllegalArgumentException e) {
+		catch (Exception e) {
 			
 			log.error(e.getMessage());
-			return ResponseEntity.ok(false);
+			PasswordResponse response = new PasswordResponse(e.getMessage());
+			return ResponseEntity.badRequest().body(response );
 		}
 	}
 }

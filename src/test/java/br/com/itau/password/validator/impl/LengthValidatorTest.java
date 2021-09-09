@@ -29,6 +29,11 @@ public class LengthValidatorTest {
 		validator.validate(generateStringWithLength(MINIMUM_PASSWORD_LENGTH + 1));
 	}
 	
+	@Test
+	public void shouldNoException_whenParameter_isNull() {
+		validator.validate(null);
+	}
+	
 	private String generateStringWithLength(int size) {
 		
 		StringBuilder stringBuilder = new StringBuilder();

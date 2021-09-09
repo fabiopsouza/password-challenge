@@ -31,4 +31,9 @@ public class DigitValidatorTest {
 	public void shouldNoException_whenParameter_hasDigitAtEnd() {
 		validator.validate("teste100");
 	}
+	
+	@Test
+	public void shouldNoException_whenParameter_isNull() {
+		validator.validate(null);
+	}
 }

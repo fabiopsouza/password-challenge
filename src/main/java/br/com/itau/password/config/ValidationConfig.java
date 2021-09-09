@@ -5,8 +5,8 @@ import static java.util.Arrays.asList;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-import br.com.itau.password.validator.ValidatorEngine;
 import br.com.itau.password.validator.impl.BlankValidator;
+import br.com.itau.password.validator.impl.DefaultValidatorEngine;
 import br.com.itau.password.validator.impl.DigitValidator;
 import br.com.itau.password.validator.impl.LengthValidator;
 import br.com.itau.password.validator.impl.LowerCaseValidator;
@@ -18,8 +18,8 @@ import br.com.itau.password.validator.impl.UpperCaseValidator;
 public class ValidationConfig {
 
 	@Bean
-	public ValidatorEngine validationEngine() {
-		return new ValidatorEngine(asList(
+	public DefaultValidatorEngine validationEngine() {
+		return new DefaultValidatorEngine(asList(
 				new BlankValidator(), 
 				new LengthValidator(),
 				new DigitValidator(),

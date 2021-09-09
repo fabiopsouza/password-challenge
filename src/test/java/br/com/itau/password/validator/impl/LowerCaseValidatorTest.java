@@ -26,4 +26,9 @@ public class LowerCaseValidatorTest {
 	public void shouldNoException_whenParameter_hasLowerCase() {
 		validator.validate("TEsTE");
 	}
+	
+	@Test
+	public void shouldNoException_whenParameter_isNull() {
+		validator.validate(null);
+	}
 }

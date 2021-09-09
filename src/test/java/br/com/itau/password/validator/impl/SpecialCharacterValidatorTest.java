@@ -76,4 +76,9 @@ public class SpecialCharacterValidatorTest {
 	public void shouldNoException_whenParameter_hasSumSign() {
 		validator.validate("test+e");
 	}
+	
+	@Test
+	public void shouldNoException_whenParameter_isNull() {
+		validator.validate(null);
+	}
 }
