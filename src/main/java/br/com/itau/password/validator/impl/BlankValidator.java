@@ -4,8 +4,10 @@ import static org.apache.commons.lang3.StringUtils.isBlank;
 
 import br.com.itau.password.validator.Validator;
 
+/** Null, Empty or White space validator */
 public class BlankValidator implements Validator {
 
+	/** @inheritDoc */
 	@Override
 	public void validate(String text) {
 		

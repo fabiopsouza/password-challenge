@@ -3,10 +3,13 @@ package br.com.itau.password.validator.impl;
 import org.junit.Before;
 import org.junit.Test;
 
+/** Tests for {@link WhiteSpaceValidator} */
 public class WhiteSpaceValidatorTest {
 
+	/** Tests for {@link WhiteSpaceValidator} */
 	private WhiteSpaceValidator validator;
 	
+	/** Test setup */
 	@Before
 	public void testSetup() {
 		validator = new WhiteSpaceValidator();

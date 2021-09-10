@@ -4,8 +4,10 @@ import static org.apache.commons.lang3.StringUtils.isNoneBlank;
 
 import br.com.itau.password.validator.Validator;
 
+/** Password lower case validator */
 public class LowerCaseValidator implements Validator {
 
+	/** @inheritDoc */
 	@Override
 	public void validate(String text) {
 		

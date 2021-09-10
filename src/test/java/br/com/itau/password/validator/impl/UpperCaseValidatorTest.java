@@ -3,10 +3,13 @@ package br.com.itau.password.validator.impl;
 import org.junit.Before;
 import org.junit.Test;
 
+/** Tests for {@link UpperCaseValidator} */
 public class UpperCaseValidatorTest {
 
+	/** Tests for {@link UpperCaseValidator} */
 	private UpperCaseValidator validator;
 	
+	/** Test setup */
 	@Before
 	public void testSetup() {
 		validator = new UpperCaseValidator();

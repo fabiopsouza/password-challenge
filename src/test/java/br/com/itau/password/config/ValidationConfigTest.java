@@ -17,10 +17,13 @@ import br.com.itau.password.validator.impl.SpecialCharacterValidator;
 import br.com.itau.password.validator.impl.UpperCaseValidator;
 import br.com.itau.password.validator.impl.WhiteSpaceValidator;
 
+/** Tests for {@link ValidationConfig} */
 public class ValidationConfigTest {
 
+	/** A {@link ValidationConfig} instance */
 	private ValidationConfig config;
 	
+	/** Test setup */
 	@Before
 	public void testSetup() {
 		config = new ValidationConfig();

@@ -6,29 +6,31 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 
-import br.com.itau.password.model.PasswordResponse;
-import br.com.itau.password.validator.impl.DefaultValidatorEngine;
+import br.com.itau.password.model.ValidationResponse;
+import br.com.itau.password.validator.ValidatorEngine;
 import lombok.extern.slf4j.Slf4j;
 
+/** Password API Controller */
 @Slf4j
 @Controller
 public class PasswordController {
 
+	/** Validation engine */
 	@Autowired
-	private DefaultValidatorEngine validator;
+	private ValidatorEngine validator;
 	
 	@PostMapping("/password/validate")
-	public ResponseEntity<PasswordResponse> validatePassword(@RequestBody (required=false) String password) {
+	public ResponseEntity<ValidationResponse> validatePassword(@RequestBody (required=false) String password) {
 		
 		try {
-			PasswordResponse response = validator.validateAll(password);
+			ValidationResponse response = validator.validateAll(password);
 			return ResponseEntity.ok(response);
 		}
 		catch (Exception e) {
 			
 			log.error(e.getMessage());
-			PasswordResponse response = new PasswordResponse(e.getMessage());
-			return ResponseEntity.badRequest().body(response );
+			ValidationResponse response = new ValidationResponse(e.getMessage());
+			return ResponseEntity.badRequest().body(response);
 		}
 	}
 }

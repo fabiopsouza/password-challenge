@@ -7,8 +7,10 @@ import java.util.Set;
 
 import br.com.itau.password.validator.Validator;
 
+/** Password repeated charaters validator */
 public class RepeatedCharactersValidator implements Validator {
 
+	/** @inheritDoc */
 	@Override
 	public void validate(String text) {
 

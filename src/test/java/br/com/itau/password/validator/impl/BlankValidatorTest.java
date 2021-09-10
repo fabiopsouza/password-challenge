@@ -3,10 +3,13 @@ package br.com.itau.password.validator.impl;
 import org.junit.Before;
 import org.junit.Test;
 
+/** Tests for {@link BlankValidator} */
 public class BlankValidatorTest {
 
+	/** Tests for {@link BlankValidator} */
 	private BlankValidator validator;
 	
+	/** Test setup */
 	@Before
 	public void testSetup() {
 		validator = new BlankValidator();

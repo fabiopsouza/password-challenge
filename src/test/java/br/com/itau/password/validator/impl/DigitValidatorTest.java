@@ -3,10 +3,13 @@ package br.com.itau.password.validator.impl;
 import org.junit.Before;
 import org.junit.Test;
 
+/** Tests for {@link DigitValidator} */
 public class DigitValidatorTest {
 
+	/** Tests for {@link DigitValidator} */
 	private DigitValidator validator;
 	
+	/** Test setup */
 	@Before
 	public void testSetup() {
 		validator = new DigitValidator();

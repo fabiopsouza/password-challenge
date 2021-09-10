@@ -6,8 +6,10 @@ import static org.apache.commons.lang3.StringUtils.isNoneBlank;
 
 import br.com.itau.password.validator.Validator;
 
+/** Password length validator */
 public class LengthValidator implements Validator {
 
+	/** @inheritDoc */
 	@Override
 	public void validate(String text) {
 		

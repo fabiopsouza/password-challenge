@@ -5,10 +5,13 @@ import static br.com.itau.password.util.Constants.MINIMUM_PASSWORD_LENGTH;
 import org.junit.Before;
 import org.junit.Test;
 
+/** Tests for {@link LengthValidator} */
 public class LengthValidatorTest {
 
+	/** Tests for {@link LengthValidator} */
 	private LengthValidator validator;
 	
+	/** Test setup */
 	@Before
 	public void testSetup() {
 		validator = new LengthValidator();

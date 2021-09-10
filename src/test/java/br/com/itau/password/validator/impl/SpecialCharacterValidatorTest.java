@@ -3,10 +3,13 @@ package br.com.itau.password.validator.impl;
 import org.junit.Before;
 import org.junit.Test;
 
+/** Tests for {@link SpecialCharacterValidator} */
 public class SpecialCharacterValidatorTest {
 
+	/** Tests for {@link SpecialCharacterValidator} */
 	private SpecialCharacterValidator validator;
 	
+	/** Test setup */
 	@Before
 	public void testSetup() {
 		validator = new SpecialCharacterValidator();

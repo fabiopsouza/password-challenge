@@ -12,10 +12,7 @@ import springfox.documentation.spi.DocumentationType;
 import springfox.documentation.spring.web.plugins.Docket;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
-/**
- * Swagger configurations
- * @author Fábio Souza
- */
+/** Swagger configurations */
 @Configuration
 @EnableSwagger2
 public class SwaggerConfig {
@@ -31,6 +28,7 @@ public class SwaggerConfig {
           .apiInfo(createMetaInfo());       
     }
 
+	/** Create meta informations for Swagger */
 	private ApiInfo createMetaInfo() {
 		
 		Contact contact = new Contact("Fábio Souza", "https://www.linkedin.com/in/fabiopdsouza", "fabiosouza.web@gmail.com");
