@@ -60,7 +60,7 @@ curl -X POST "https://password-challenge.herokuapp.com/password/validate" -H "ac
 
 # Execução Local
 
-A maneira mais simples de se executar esta aplicação localmente é através do [Maven](https://password-challenge.herokuapp.com/swagger-ui/). Para saber como instalar, acesse o link: [Manual de Instalação do Maven](https://maven.apache.org/install).
+A maneira mais simples de se executar esta aplicação localmente é através do [Maven](https://maven.apache.org). Para saber como instalar, acesse o link: [Manual de Instalação do Maven](https://maven.apache.org/install).
 
 Com o [Maven](https://password-challenge.herokuapp.com/swagger-ui/) instalado, basta executar o comando, abaixo dentro da pasta raiz da aplicação:
 
