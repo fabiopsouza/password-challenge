@@ -1,4 +1,4 @@
-<img src="https://upload.wikimedia.org/wikipedia/commons/8/8a/Banco_Ita%C3%BA_logo.svg" height="60"> [Backend Challenge](https://www.itau.com.br/)
+[Backend Challenge](https://www.itau.com.br/)
 ===============================================
 
 # Índice
@@ -12,8 +12,6 @@
 - [Premissas Extras](#premissas-extras)
 
 # Introdução
-
-Esse repositório tem como objetivo resolver o desafio proposto pelo processo seletivo do [Banco Itaú](https://www.itau.com.br/). Para saber mais detalhes sobre o desafio, acesse o link: [itidigital/backend-challenge](https://github.com/itidigital/backend-challenge).
 
 A documentação técnica pode ser encontrada em: [Swagger Documentation](https://password-challenge.herokuapp.com/swagger-ui/).
 
